@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import { Metadata } from 'next'
+import Logo from '../public/vercel.svg';
 
 // export const metadata: Metadata = {
 // 	title: 'Исправленные данные',
@@ -17,6 +18,7 @@ export default function Home() {
 	return (
 		<main className={styles.main}>
 			<div className={styles.description}>
+				<Logo />
 				<p>
 					Get started by editing&nbsp;
 					<code className={styles.code}>app/page.tsx</code>
