@@ -1,4 +1,5 @@
 import { Metadata } from 'next'
+import styles from './page.module.css'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -16,7 +17,16 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="ru">
-			<body className={inter.className}>{children}</body>
+			<body className={inter.className}>
+				<nav className={styles.nav}>
+					<ul>
+						<li>Курсы</li>
+						<li>Для детей</li>
+						<li>О нас</li>
+					</ul>
+				</nav>
+				{children}
+			</body>
 		</html>
 	)
 }
