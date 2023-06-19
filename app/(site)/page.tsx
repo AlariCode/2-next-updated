@@ -15,6 +15,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default function Home() {
+	console.log('I am home');
 	return (
 		<main className={styles.main}>
 			Главная страница
