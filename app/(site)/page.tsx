@@ -20,6 +20,8 @@ export async function generateMetadata(): Promise<Metadata> {
 // });
 
 export default async function Home() {
+	const menu = await getMenu(0);
+
 	return (
 		<main className={styles.main}>
 			Главная страница
