@@ -25,7 +25,7 @@ export default function RootLayout({
 						<li>Курсы</li>
 						<li>Для детей</li>
 						<li><Link href={'/about'}>О нас</Link></li>
-						<li><a href={'/products/1'}>Продукт 1</a></li>
+						<li><a href={'/products/typescript'}>Продукт 1</a></li>
 						<li><Link href={'/aboutsdfsdf'}>О нас 3</Link></li>
 					</ul>
 				</nav>
