@@ -1,10 +1,11 @@
 import { Metadata } from 'next'
 import styles from './page.module.css'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Open_Sans } from 'next/font/google'
 import Link from 'next/link'
+import Script from 'next/script'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Open_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
 	title: 'Наш проект',
@@ -18,6 +19,8 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="ru">
+			<head>
+			</head>
 			<body className={inter.className}>
 				<nav className={styles.nav}>
 					<ul>

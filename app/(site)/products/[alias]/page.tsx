@@ -4,8 +4,11 @@ import { TopLevelCategory } from '@/interfaces/page.interface';
 import { Metadata, } from 'next'
 import { notFound } from 'next/navigation'
 
-export const metadata: Metadata = {
-	title: 'Страница',
+export async function generateMetadata({ params }: { params: { alias: string } }): Promise<Metadata> {
+	const page = await getPage(params.alias);
+	return {
+		title: page?.metaTitle
+	}
 }
 
 export async function generateStaticParams() {

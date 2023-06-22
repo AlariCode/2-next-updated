@@ -3,7 +3,6 @@ import { MenuItem } from '@/interfaces/menu.interface';
 import { TopPageModel } from '@/interfaces/page.interface';
 
 export async function getPage(alias: string): Promise<TopPageModel | null> {
-	throw new Error('sadfa')
 	await new Promise((res) => setTimeout(() => { res('') }, 3000))
 	const res = await fetch(API.topPage.byAlias + alias, {
 		next: { revalidate: 10 }
